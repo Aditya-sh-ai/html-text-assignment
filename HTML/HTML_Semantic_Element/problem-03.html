@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Care Clinic</title>
+</head>
+<body>
+
+<header>
+    <h1>City Care Clinic</h1>
+    <p>Healthcare & Appointment Portal</p>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#services">Services</a> |
+        <a href="#doctors">Doctors</a> |
+        <a href="#appointment">Appointment</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="home">
+    <h2>Welcome to City Care Clinic</h2>
+    <p>
+        City Care Clinic provides medical services in a safe and
+        comfortable environment.
+    </p>
+
+    <figure>
+        <a href="clinic.jpg">
+            <img src=https://imgs.search.brave.com/IvjH9MGmsswKtarLz_E-5TQ4XlVVLqvn5BwNfvpaoyw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE3/MDAxODU1MC9waG90/by9wb3N0LWNhbmNl/ci1jaGVjay11cC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/Y2ZWUUdUNGh0Uktn/Mm5USS13Zm1pYWRM/MnRGdzRSdHJlWE1K/WUNZbU82MD0 alt="City Care Clinic building" width="500">
+        </a>
+        <figcaption>City Care Clinic</figcaption>
+    </figure>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <ul>
+        <li>General Consultation</li>
+        <li>Dental Care</li>
+        <li>Child Care</li>
+        <li>Eye Care</li>
+        <li>Health Check-up</li>
+    </ul>
+
+    <article>
+        <h3>General Consultation</h3>
+        <p>Consultation for common health concerns and regular check-ups.</p>
+    </article>
+</section>
+
+<section id="doctors">
+    <h2>Doctor Schedule</h2>
+
+    <table border="1" cellpadding="6">
+        <caption>Doctor Timings</caption>
+        <tr>
+            <th>Specialist</th>
+            <th>Department</th>
+            <th>Days</th>
+            <th>Time</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>Dr. Sharma</td>
+            <td>General</td>
+            <td>Mon-Wed</td>
+            <td>10 AM-1 PM</td>
+            <td>OPD</td>
+        </tr>
+        <tr>
+            <td>Dr. Verma</td>
+            <td>Dental</td>
+            <td>Tue-Thu</td>
+            <td>11 AM-2 PM</td>
+            <td>Consultation</td>
+        </tr>
+        <tr>
+            <td>Dr. Singh</td>
+            <td>Eye Care</td>
+            <td>Mon-Fri</td>
+            <td>2 PM-5 PM</td>
+            <td>OPD</td>
+        </tr>
+        <tr>
+            <td>Dr. Gupta</td>
+            <td>Child Care</td>
+            <td>Wed-Sat</td>
+            <td>10 AM-1 PM</td>
+            <td>Consultation</td>
+        </tr>
+        <tr>
+            <td>Dr. Khan</td>
+            <td>General</td>
+            <td>Mon-Sat</td>
+            <td>5 PM-7 PM</td>
+            <td>Follow-up</td>
+        </tr>
+        <tr>
+            <td>Dr. Mehta</td>
+            <td>Dental</td>
+            <td>Fri-Sat</td>
+            <td>11 AM-2 PM</td>
+            <td>Consultation</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Appointment Steps</h2>
+    <ol>
+        <li>Select a department</li>
+        <li>Select a doctor</li>
+        <li>Choose date and time</li>
+        <li>Enter your details</li>
+        <li>Submit the request</li>
+    </ol>
+
+    <dl>
+        <dt><strong>Consultation</strong></dt>
+        <dd>Meeting with a doctor for medical advice.</dd>
+        <dt><strong>Follow-up</strong></dt>
+        <dd>A later visit after an earlier consultation.</dd>
+        <dt><strong>OPD</strong></dt>
+        <dd>Outpatient Department.</dd>
+        <dt><strong>Appointment</strong></dt>
+        <dd>A scheduled visit with a doctor.</dd>
+    </dl>
+</section>
+
+<aside>
+    <h3>Patient Information</h3>
+    <p>Please arrive a few minutes before your appointment.</p>
+</aside>
+
+<section id="appointment">
+    <h2>Request an Appointment</h2>
+
+    <form>
+        <label>Patient Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile:</label>
+        <input type="tel" name="mobile" required><br><br>
+
+        <label>Date:</label>
+        <input type="date" name="date"><br><br>
+
+        <label>Department:</label>
+        <select name="department">
+            <option>General</option>
+            <option>Dental</option>
+            <option>Eye Care</option>
+            <option>Child Care</option>
+        </select><br><br>
+
+        <label>Doctor:</label>
+        <select name="doctor">
+            <option>Dr. Sharma</option>
+            <option>Dr. Verma</option>
+            <option>Dr. Singh</option>
+            <option>Dr. Gupta</option>
+        </select><br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" min="1"><br><br>
+
+        <label>Reason:</label><br>
+        <textarea name="reason" rows="4" cols="40"></textarea><br><br>
+
+        <input type="checkbox" required>
+        <label>I agree to the clinic terms.</label><br><br>
+
+        <input type="submit" value="Book Appointment">
+        <input type="reset" value="Reset">
+    </form>
+</section>
+
+</main>
+
+<footer id="contact">
+    <hr>
+    <p>City Care Clinic | Phone: 9876543210</p>
+    <p>Email: info@citycare.com</p>
+    <p>For emergencies, contact your local emergency service.</p>
+</footer>
+
+</body>
+</html>
+
